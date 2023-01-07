@@ -406,9 +406,7 @@ body{
 }
 /*media query*/
 @media only screen and (max-width: 1024px){
-    .navabar__movil__container{
-        display: block;
-    }
+
     .navbar__container{
         width: 0px;
         overflow: hidden;
@@ -439,6 +437,7 @@ body{
         align-items: center;
     }
     .navabar__movil__container{
+        display: block;
         position: absolute;
         z-index: 2;
         width: 100%;
@@ -455,11 +454,11 @@ body{
         font-size: 20px;
     }
     #navbar__movil__icon{
-        width: 70px;
+        width: 60px;
         cursor: pointer;
     }
     .container__home{
-        top: 450px;
+        top: 170px;
     }
     .container__item{
         position: relative;
