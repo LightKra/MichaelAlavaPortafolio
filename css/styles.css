@@ -144,6 +144,9 @@ body{
     top:0;
     left: 330px;
 }
+.navabar__movil__container{
+    display: none;
+}
 /*section home*/
 .container__home{
     position: relative;
@@ -160,7 +163,12 @@ body{
     width: 100%;
     display: grid;
 }
-
+.container__item__link{
+    text-decoration: none;
+}
+.container__home__portafolio{
+    top: 200px;
+}
 .container__2{
     width: 100%;
     position: absolute;
@@ -188,7 +196,7 @@ body{
 }
 .container__name__item{
     display: block;
-    width: 200px;
+    width: 380px;
     padding: 20px;
     border-radius: 20px;
     transition: .5s all;
@@ -395,4 +403,66 @@ body{
         border-radius: 50%;
     }
 
+}
+/*media query*/
+@media only screen and (max-width: 1024px){
+    .navabar__movil__container{
+        display: block;
+    }
+    .navbar__container{
+        width: 0px;
+        overflow: hidden;
+        transition: .5s all;
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        transform: translateX(-20px);
+        border-radius: 0px 0px 100px 0px;
+        padding-bottom: 50px;
+    }
+    .navbar__container:hover{
+        width: 310px;
+        overflow: hidden;
+    }
+    #container_sectionContent{
+        position: static;
+    }
+    .container__home{
+        position: relative;
+        top: 300px;
+        width: 85%;
+        margin: 20px auto;
+        transition: 0.5s all;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navabar__movil__container{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        background-color: var(--backgroundNavbarColor);
+    }
+    .navabar__movil{
+        height: 90px;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__name{
+        font-size: 20px;
+    }
+    #navbar__movil__icon{
+        width: 70px;
+        cursor: pointer;
+    }
+    .container__home{
+        top: 450px;
+    }
+    .container__item{
+        position: relative;
+        top: 90px;
+    }
 }
