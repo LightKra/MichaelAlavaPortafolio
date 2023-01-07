@@ -458,7 +458,10 @@ body{
         cursor: pointer;
     }
     .container__home{
-        top: 170px;
+        top: 450px;
+    }
+    .container__home__portafolio{
+        top: 170px
     }
     .container__item{
         position: relative;
