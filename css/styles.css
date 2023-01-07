@@ -468,3 +468,8 @@ body{
         top: 90px;
     }
 }
+@media only screen and(max-width: 767px){
+    .navabar__movil{
+        margin: 0px
+    }
+}
